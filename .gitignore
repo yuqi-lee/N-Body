@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# 过滤 OS X 系统文件
+.DS_Store
+
 # C extensions
 *.so
 
