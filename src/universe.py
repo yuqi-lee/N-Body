@@ -1,12 +1,6 @@
 #-*- coding: UTF-8 -*-
 
 
-# -----------------------------------------------------------------------
-# universe.py
-# -----------------------------------------------------------------------
-
-
-
 import sys
 import stdarray
 import stddraw
@@ -60,9 +54,9 @@ class Universe:
 
             # 画出自己
 
-    def draw(self):
+    def draw(self,trackn):
         for body in self._bodies:
-            body.draw()
+            body.draw(trackn)
 
 
 # -----------------------------------------------------------------------
@@ -73,15 +67,14 @@ class Universe:
 # specified by dt.
 
 def main():
-    filename = '4body.txt'
-    dt = float(20000)
-    #filename = sys.argv[1]
-    #dt = float(sys.argv[2])
+    filename = sys.argv[1]
+    dt = float(sys.argv[2])
+    trackn = float(sys.argv[3])
     universe = Universe(filename)
     while True:
         universe.increaseTime(dt)
         stddraw.clear()
-        universe.draw()
+        universe.draw(trackn)
         stddraw.show(10)
 
 

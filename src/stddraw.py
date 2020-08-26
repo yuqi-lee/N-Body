@@ -104,6 +104,12 @@ _mousePos = None
 
 #-----------------------------------------------------------------------
 
+# 定义颜色
+colors=[MAGENTA,ORANGE,GREEN,RED,BLUE,YELLOW,PINK,BLACK,VIOLET]
+colorsn=len(colors)
+
+
+
 def _pygameColor(c):
     """
     Convert c, an object of type color.Color, to an equivalent object
