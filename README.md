@@ -207,6 +207,7 @@ class Vector:
 	# 定义颜色
 colors = [MAGENTA,ORANGE,GREEN,RED,BLUE,YELLOW,PINK,BLACK,VIOLET]
 colorsn = len(colors)
+
 	```
 	其中 MAGENTA、ORANGE、GREEN…… 是在文件 color.py 中定义的变量，它们已经在该文件中根据 RGB 调好相应的颜色
 	
